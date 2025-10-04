@@ -3,31 +3,24 @@
 
 int main(int argc, char *argv[])
 {
-    int a,b;
-    char op;
-    int result;
+    int answer=59;
+    int num;
+    int trial=0;
     
-    printf("Enter the calculation: ");
-    scanf("%i%c%i", &a,&op,&b);
-    
-    switch(op)
+    do
     {
-              case '+':
-                   result= a+b;
-                   break;
-                   
-              case '-':
-                   result=a-b;
-                   break;
-              case '*':
-                   result=a*b;
-                   break;
-              case '/':
-                   result=a/b;
-                   break;
-                   }
-                   
-    printf("= %i",result);
+        printf("Input a number:");
+        scanf("%d",&num);
+        
+        trial++;
+        
+        if (answer<num)
+         printf("high!\n");
+        else if (answer>num)
+         printf("low!\n");
+         } while(answer!=num);
+         
+    printf("Congratulation! trial:%i\n",trial);
                       
   
   system("PAUSE");	
