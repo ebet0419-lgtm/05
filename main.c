@@ -9,9 +9,11 @@ int main(int argc, char *argv[])
     scanf ("%d",&x);
     
     if (x>0)
-     printf("absolute is %i.\n",x);
+     printf("양수입니다.\n",x);
+    else if (x<0)
+     printf("음수입니다.\n",-x); 
     else
-     printf("absolute is %i.\n",-x); 
+     printf("0입니다.\n"); 
   
   system("PAUSE");	
   return 0;
